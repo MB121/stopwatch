@@ -27,6 +27,7 @@ Non-Functional Requirements:
 -> Button actions should be responsive and clearly visible.
 
 -> The application should be compatible with modern web browsers such as Google Chrome, Mozilla Firefox, and Safari.
+<<<<<<< HEAD
 
 ## Available Scripts
 
@@ -93,4 +94,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+> > > > > > > 9675618a5b5dcf84ec0f29dfec6f1d5c2709b6a3
