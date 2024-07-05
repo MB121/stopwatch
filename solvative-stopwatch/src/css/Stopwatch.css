@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.stopwatch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.stopwatch {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.display {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 30px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    flex: 1 0 auto;
+    min-width: 100px;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.btn.running {
+    background: #ff6b6b;
+}
+
+.final-time {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.final-time {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .stopwatch {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .display {
+        font-size: 2.5em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .stopwatch {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .display {
+        font-size: 4em;
+    }
+
+    .btn {
+        font-size: 1.2em;
+    }
+}
